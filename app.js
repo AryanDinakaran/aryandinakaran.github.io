@@ -176,10 +176,10 @@ class BinaryGlobe {
       this.lastPointerX = e.clientX;
       this.lastPointerY = e.clientY;
       
-      // Inverted direction: easy, natural, and opposite of before
+      // Horizontal drag kept, vertical movement inverted per user request
       const sensitivity = 0.0052;
       this.dragVelocityX = -dx * sensitivity;
-      this.dragVelocityY = -dy * sensitivity;
+      this.dragVelocityY = dy * sensitivity;
       
       this.rotationY += this.dragVelocityX;
       this.rotationX += this.dragVelocityY;
@@ -215,7 +215,7 @@ class BinaryGlobe {
         
         const sensitivity = 0.006;
         this.dragVelocityX = -dx * sensitivity;
-        this.dragVelocityY = -dy * sensitivity;
+        this.dragVelocityY = dy * sensitivity;
         
         this.rotationY += this.dragVelocityX;
         this.rotationX += this.dragVelocityY;
