@@ -1,63 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>epochlypse</title>
-    <style>
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: "Courier New", Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 600px;
-        }
-
-        a {
-            color: #000000;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            background-color: #000000;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        p {
-            margin: 15px 0;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .tagline {
-            margin-top: 30px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Epochlypse Research — We do AI the right way. We believe in SafeAI and deterministic guardrails for autonomous intelligence and edge computing." />
+  <meta name="author" content="Aryan Dinakaran" />
+  
+  <title>Epochlypse Research // SafeAI, Edge Computing &amp; Autonomous Systems</title>
+  
+  <!-- Monospace Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23000000%22 font-family=%22monospace%22 font-weight=%22bold%22>E</text></svg>" />
 </head>
 <body>
 
-    <div class="container">
-        <p>made by <a href="https://github.com/AryanDinakaran" target="_blank">Aryan Dinakaran</a></p>
-        
-        <p>Reach us @ <a href="mailto:founder@epochlypse.com">founder@epochlypse.com</a></p>
-        
-        <p>We come from <strong>Mumbai (Bombay), MH, India.</strong></p>
-        
-        <p class="tagline">We do research and deploy reality.</p>
-    </div>
+  <!-- ========================================================================
+       TOP NAVIGATION & SYSTEM HEADER
+       ======================================================================== -->
+  <header class="header-wrapper">
+    <div class="header-container">
+      
+      <!-- Top Row: On desktop this is 'display: contents', on mobile it is flex row -->
+      <div class="header-top-row">
+        <!-- Brand & Ticker -->
+        <div class="brand-section">
+          <a href="#home" class="brand-logo" title="Epochlypse Research">
+            EPOCHLYPSE <span class="brand-cursor"></span>
+          </a>
+          <span class="brand-tag">RESEARCH LAB</span>
+        </div>
 
+        <!-- System Status & NVIDIA Inception Badge -->
+        <div class="header-meta">
+          <div class="sys-status">
+            <span class="status-dot"></span>
+            <span>MUMBAI [19.05°N, 72.84°E]</span>
+          </div>
+          <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener noreferrer" class="header-nvidia-badge" title="Epochlypse Research is accelerated by NVIDIA Inception Program">
+            <img src="./assets/nvidia-inception-program-badge-rgb-for-screen.svg" alt="Epochlypse Research is accelerated by NVIDIA Inception Program" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs: Home, Projects, Contact -->
+      <nav class="nav-tabs" role="tablist" aria-label="Main Navigation">
+        <button class="nav-tab-btn active" data-tab="home" role="tab" aria-selected="true" aria-controls="tab-home">
+          <span class="nav-tab-num">[01]</span> HOME
+        </button>
+        <button class="nav-tab-btn" data-tab="projects" role="tab" aria-selected="false" aria-controls="tab-projects">
+          <span class="nav-tab-num">[02]</span> PROJECTS
+        </button>
+        <button class="nav-tab-btn" data-tab="contact" role="tab" aria-selected="false" aria-controls="tab-contact">
+          <span class="nav-tab-num">[03]</span> CONTACT
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT CONTAINER
+       ======================================================================== -->
+  <main>
+
+    <!-- ======================================================================
+         TAB 1: HOME
+         ====================================================================== -->
+    <section id="tab-home" class="tab-view active" role="tabpanel" aria-labelledby="tab-01">
+      
+      <!-- Hero Grid: Punchline + Revolving Binary Globe -->
+      <div class="hero-section">
+        
+        <!-- Left / Top on Mobile: Punchline & Mission -->
+        <div class="hero-content">
+          <div class="punchline-badge">
+            <span class="section-badge">// FRONTIER SAFE-AI</span>
+            <span>EDGE COMPUTING &bull; LOCAL AUTONOMY</span>
+          </div>
+
+          <h1 class="hero-punchline">
+            We engineer <span class="highlight">Sovereign AI</span>. Secured by unbreakable guardrails. Built for the <span class="highlight">edge</span>.
+          </h1>
+
+          <p class="hero-description">
+            The only way to be genuinely optimistic about AI is to build deterministic guardrails for it. Epochlypse Research builds high-velocity autonomous multi-agent systems and local edge computing architectures engineered for zero telemetry, zero cloud dependency, and total mathematical safety.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn-primary" data-nav-target="projects">
+              View Flagship: EpochGo [02] ↗
+            </button>
+            <button class="btn-secondary" data-nav-target="contact">
+              Direct Contact [03] →
+            </button>
+            <a href="https://github.com/AryanDinakaran" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              GitHub: @AryanDinakaran ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Right / Down on Mobile: 3D Revolving Earth Globe with 0s and 1s -->
+        <div class="globe-wrapper">
+          <div class="globe-hud-bar">
+            <span>// 3D BINARY GLOBE NAVIGATION</span>
+            <span>PROJECTION: 3D CONTINENTAL MATRIX</span>
+          </div>
+
+          <div class="globe-canvas-container" title="Click &amp; drag to rotate the 3D Binary Earth">
+            <canvas id="globeCanvas"></canvas>
+          </div>
+
+          <div class="globe-controls-bar">
+            <span class="hud-hint">DRAG TO ROTATE &bull; MUMBAI [19.0509° N, 72.8359° E]</span>
+            <div style="display: flex; gap: 0.5rem;">
+              <button id="toggleSpinBtn" class="globe-action-btn" type="button">Auto-Spin: ON</button>
+              <button id="resetGlobeBtn" class="globe-action-btn" type="button">Focus Mumbai</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Ticker Strip -->
+      <div class="ticker-strip">
+        <div class="ticker-item">
+          <span class="ticker-label">// ORIGIN LOCATION</span>
+          <span class="ticker-val">MUMBAI (BOMBAY), INDIA</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">// ACCELERATION</span>
+          <span class="ticker-val">EPOCHLYPSE RESEARCH IS ACCELERATED BY NVIDIA INCEPTION PROGRAM</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">// FLAGSHIP PROJECT</span>
+          <span class="ticker-val">EPOCHGO [30K+ EXPOSURE]</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">// SYSTEM PARADIGM</span>
+          <span class="ticker-val">SAFEAI &amp; EDGE GUARDRAILS</span>
+        </div>
+      </div>
+
+      <!-- About Section: Mumbai Production Branding, Founder & Partnerships -->
+      <div class="about-section">
+        
+        <div class="section-badge-bar">
+          <span>// ABOUT EPOCHLYPSE RESEARCH</span>
+          <span>ORIGINS &amp; SYSTEMS ARCHITECTURE</span>
+        </div>
+
+        <!-- Origin Production Branding Banner: Mumbai, India -->
+        <div class="origin-banner">
+          <div class="origin-text-block">
+            <div class="section-badge">PRODUCTION BRANDING // ROOTS</div>
+            <h2 class="origin-title">We come from Mumbai (Bombay), India.</h2>
+            <p class="origin-desc">
+              Engineered and deployed from the industrial and economic heart of India. At Epochlypse Research, we build high-efficiency, sovereign computational systems and edge computing pipelines designed to run locally on private hardware without cloud gatekeepers.
+            </p>
+          </div>
+
+          <!-- Technical Coordinate Card -->
+          <div class="origin-coords-card">
+            <div class="coord-row">
+              <span class="coord-key">CITY / METRO:</span>
+              <span class="coord-val">MUMBAI (BOMBAY)</span>
+            </div>
+            <div class="coord-row">
+              <span class="coord-key">COORDINATES:</span>
+              <span class="coord-val">19.050862, 72.835904</span>
+            </div>
+            <div class="coord-row">
+              <span class="coord-key">TIMEZONE:</span>
+              <span class="coord-val">UTC+5:30 [IST]</span>
+            </div>
+            <div class="coord-row">
+              <span class="coord-key">PRIMARY BASE:</span>
+              <span class="coord-val">MAHARASHTRA, INDIA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder Profile Card & NVIDIA Inception Card -->
+        <div class="about-grid">
+          
+          <!-- Founder Card -->
+          <div class="card-box">
+            <div class="card-header-bar">
+              <span>FOUNDER &amp; AI INNOVATOR</span>
+              <span>// DOSSIER</span>
+            </div>
+
+            <div class="founder-title-group">
+              <h3 class="founder-name">Aryan Dinakaran</h3>
+              <span class="founder-role">Creator of EpochGo &bull; AI Innovator</span>
+            </div>
+
+            <p class="founder-bio">
+              Founded Epochlypse Research to engineer edge computing architectures, autonomous multi-agent pipelines, and deterministic AI safety guardrails. Dedicated to pioneering local-first AI innovations that operate with zero cloud leaks and complete privacy.
+            </p>
+
+            <div class="founder-links">
+              <a href="https://github.com/AryanDinakaran" target="_blank" rel="noopener noreferrer" class="btn-link-mono">
+                GitHub: @AryanDinakaran ↗
+              </a>
+              <a href="https://www.linkedin.com/in/aryan-dinakaran-462277230/" target="_blank" rel="noopener noreferrer" class="btn-link-mono">
+                LinkedIn: Aryan Dinakaran ↗
+              </a>
+              <button class="btn-link-mono" data-copy-target="aryan@epochlypse.com" data-copy-label="Copied Aryan's email!">
+                Copy Email
+              </button>
+            </div>
+          </div>
+
+          <!-- NVIDIA Inception Card -->
+          <div class="card-box nvidia-card">
+            <div class="card-header-bar">
+              <span>ECOSYSTEM &amp; ACCELERATION</span>
+              <span>NVIDIA INCEPTION</span>
+            </div>
+
+            <div class="nvidia-badge-container">
+              <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener noreferrer" title="Epochlypse Research is accelerated by NVIDIA Inception Program">
+                <img src="./assets/nvidia-inception-program-badge-rgb-for-screen.svg" alt="Epochlypse Research is accelerated by NVIDIA Inception Program" class="nvidia-badge-img" />
+              </a>
+            </div>
+
+            <p class="nvidia-desc">
+              Epochlypse Research is accelerated by NVIDIA Inception Program — a premier initiative supporting startups revolutionizing industries with advancements in AI, high-performance computing, and deep learning infrastructure.
+            </p>
+
+            <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener noreferrer" class="btn-link-mono" style="align-self: flex-start;">
+              NVIDIA Inception Portal ↗
+            </a>
+          </div>
+
+        </div>
+
+        <!-- SafeAI & Edge Pillars -->
+        <div class="pillars-section">
+          <div class="section-badge-bar">
+            <span>// THE SAFE-AI FRAMEWORK</span>
+            <span>CORE PILLARS</span>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <span class="pillar-num">[ PILLAR 01 ]</span>
+              <h4 class="pillar-title">Deterministic Guardrails</h4>
+              <p class="pillar-desc">
+                The only way to be genuinely optimistic about AI is by building robust guardrails. We implement strict boundary verification, sandboxing, and output integrity checks.
+              </p>
+            </div>
+
+            <div class="pillar-item">
+              <span class="pillar-num">[ PILLAR 02 ]</span>
+              <h4 class="pillar-title">Edge Computing &amp; Local First</h4>
+              <p class="pillar-desc">
+                Decoupling AI computation from centralized clouds. Zero API keys, zero telemetry, and complete data sovereignty running directly on local consumer and edge silicon.
+              </p>
+            </div>
+
+            <div class="pillar-item">
+              <span class="pillar-num">[ PILLAR 03 ]</span>
+              <h4 class="pillar-title">Verifiable Multi-Agent Systems</h4>
+              <p class="pillar-desc">
+                Multi-agent architectures where each agent has explicit roles, auditable outputs, and self-contained pipelines that prevent hallucinations and uncontrolled drift.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+         TAB 2: PROJECTS (EPOCHGO EXCLUSIVELY)
+         ====================================================================== -->
+    <section id="tab-projects" class="tab-view" role="tabpanel" aria-labelledby="tab-02">
+      
+      <div class="projects-section">
+        
+        <div class="section-badge-bar">
+          <span>// 02: RESEARCH &amp; PRODUCTION SYSTEMS</span>
+          <span>FLAGSHIP PROJECT ONLY</span>
+        </div>
+
+        <!-- Flagship Project: EpochGo -->
+        <div class="flagship-card">
+          
+          <div class="flagship-top">
+            <div class="project-badges">
+              <span class="project-badge flagship">FLAGSHIP PROJECT</span>
+              <span class="project-badge">v1.1.0</span>
+              <span class="project-badge">100% LOCAL-FIRST</span>
+              <span class="project-badge">EDGE READY</span>
+              <span class="project-badge">DOCKER READY</span>
+              <span class="project-badge">OPEN SOURCE</span>
+            </div>
+
+            <div class="flagship-title-row">
+              <h2 class="flagship-name">⚡ EpochGo</h2>
+              <a href="https://github.com/AryanDinakaran/EpochGo" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                View Repository on GitHub ↗
+              </a>
+            </div>
+
+            <p class="flagship-tagline">
+              <strong>Autonomous, Local-First Multi-Agent AutoML Platform</strong><br/>
+              Developed by Epochlypse Research &bull; Powered by CrewAI, Ollama, Scikit-Learn, XGBoost, LightGBM, and FastAPI.
+            </p>
+          </div>
+
+          <!-- Impact Metrics Grid -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-value">30K+</span>
+              <span class="stat-label">Views Exposure (Reddit &amp; Hacker News)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">23</span>
+              <span class="stat-label">GitHub Stars</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">1</span>
+              <span class="stat-label">Community Fork</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">0</span>
+              <span class="stat-label">Cloud Cost / Zero API Keys</span>
+            </div>
+          </div>
+
+          <!-- Coordinated Multi-Agent Architecture -->
+          <div class="agents-breakdown">
+            <span class="breakdown-title">// 3-AGENT COORDINATED PIPELINE WITH DETERMINISTIC GUARDRAILS</span>
+            <div class="agents-grid">
+              
+              <div class="agent-box">
+                <span class="agent-num">AGENT 01</span>
+                <h4 class="agent-name">Data Preprocessor &amp; Feature Architect</h4>
+                <p class="agent-desc">
+                  Detects missing values, IQR outliers, categorical encodings, scaling, and high-dimensional multicollinearity via PCA. Produces serialized preprocessor pipelines.
+                </p>
+              </div>
+
+              <div class="agent-box">
+                <span class="agent-num">AGENT 02</span>
+                <h4 class="agent-name">ML Benchmark &amp; Tuning Specialist</h4>
+                <p class="agent-desc">
+                  Evaluates 7 baseline algorithms (XGBoost, LightGBM, CatBoost, Random Forest, Extra Trees, Gradient Boosting, Linear/Ridge) without bias. Performs RandomizedSearchCV optimization.
+                </p>
+              </div>
+
+              <div class="agent-box">
+                <span class="agent-num">AGENT 03</span>
+                <h4 class="agent-name">MLOps &amp; Model Serving Engineer</h4>
+                <p class="agent-desc">
+                  Synthesizes standalone FastAPI microservice scripts (<span style="color:#000; font-weight:600;">serve.py</span>) with pydantic schemas, Swagger UI, health checks, and Docker containerization.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Terminal Quickstart Code Block -->
+          <div class="terminal-block">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <div class="terminal-dot"></div>
+                <div class="terminal-dot"></div>
+                <div class="terminal-dot"></div>
+              </div>
+              <span>bash // local-first edge deployment</span>
+              <button class="terminal-copy-btn" data-copy-target="git clone https://github.com/AryanDinakaran/EpochGo.git &amp;&amp; cd EpochGo &amp;&amp; docker-compose up --build" data-copy-label="Copied install command!">
+                [ Copy Command ]
+              </button>
+            </div>
+            <pre class="terminal-code"><code><span class="comment"># Clone repository and launch local AutoML cluster</span>
+<span class="cmd">git clone https://github.com/AryanDinakaran/EpochGo.git</span>
+<span class="cmd">cd EpochGo</span>
+<span class="cmd">docker-compose up --build</span>
+
+<span class="comment"># Access local dashboard in your browser:</span>
+<span class="cmd"># -> http://localhost:8000 (100% private, zero telemetry, local edge compute)</span></code></pre>
+          </div>
+
+          <!-- SafeAI Note on EpochGo -->
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-sm); font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
+            <strong style="color: var(--text-primary);">Why EpochGo exemplifies SafeAI:</strong> Zero cloud connectivity is needed to run full AutoML pipelines. Data never leaves your machine, all model artifacts are serialized locally, and code generation runs within strictly bounded local templates.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+         TAB 3: CONTACT
+         ====================================================================== -->
+    <section id="tab-contact" class="tab-view" role="tabpanel" aria-labelledby="tab-03">
+      
+      <div class="contact-section">
+        
+        <div class="section-badge-bar">
+          <span>// 03: SECURE COMMUNICATIONS</span>
+          <span>OUTREACH &amp; COLLABORATION</span>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Primary Email Card -->
+          <div class="contact-primary-card">
+            
+            <div class="contact-header-group">
+              <div class="section-badge">DIRECT COMMUNICATION CHANNEL</div>
+              <h2 class="contact-title">Reach Out to Epochlypse</h2>
+              <p class="contact-subtitle">
+                For edge computing research, collaboration, SafeAI discussions, or partnerships, connect directly with our founder.
+              </p>
+            </div>
+
+            <!-- Email Display with 1-Click Copy -->
+            <div class="email-display-box">
+              <div>
+                <span style="font-size: 0.72rem; color: var(--text-muted); display: block; text-transform: uppercase; letter-spacing: 0.06em;">FOUNDER DIRECT:</span>
+                <span class="email-address">aryan@epochlypse.com</span>
+              </div>
+              <div class="email-actions">
+                <button class="btn-copy-email" data-copy-target="aryan@epochlypse.com" data-copy-label="Email copied: aryan@epochlypse.com">
+                  Copy Address
+                </button>
+                <a href="mailto:aryan@epochlypse.com" class="btn-primary" style="font-size: 0.8rem; padding: 0.45rem 0.9rem;">
+                  Open Mail ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Terminal Message Composer -->
+            <div class="message-composer">
+              <span class="composer-title">// QUICK TRANSMISSION DRAFT</span>
+              <input type="text" id="composerSubject" class="composer-input" placeholder="Subject (e.g. Edge Computing / EpochGo / Collaboration)" />
+              <textarea id="composerBody" class="composer-textarea" placeholder="Your transmission message..."></textarea>
+              <button id="sendComposerBtn" class="btn-primary" style="align-self: flex-start;">
+                Dispatch via Mail Client ↗
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Base of Operations & Coordinate Metadata -->
+          <div class="contact-meta-card">
+            <div class="card-header-bar">
+              <span>LOCATION &amp; PROFILES</span>
+              <span>// METADATA</span>
+            </div>
+
+            <div class="contact-meta-list">
+              <div class="contact-meta-item">
+                <span class="meta-label">FOUNDER:</span>
+                <span class="meta-content">Aryan Dinakaran (AI Innovator)</span>
+              </div>
+
+              <div class="contact-meta-item">
+                <span class="meta-label">BASE OF OPERATIONS:</span>
+                <span class="meta-content">Mumbai (Bombay), MH, India</span>
+              </div>
+
+              <div class="contact-meta-item">
+                <span class="meta-label">GEOGRAPHIC COORDINATES:</span>
+                <span class="meta-content">19.050862, 72.835904</span>
+              </div>
+
+              <div class="contact-meta-item">
+                <span class="meta-label">ORGANIZATION:</span>
+                <span class="meta-content">Epochlypse Research</span>
+              </div>
+
+              <div class="contact-meta-item">
+                <span class="meta-label">DEVELOPER PORTAL:</span>
+                <a href="https://github.com/AryanDinakaran" target="_blank" rel="noopener noreferrer" class="meta-content" style="color: #000000; text-decoration: underline;">
+                  github.com/AryanDinakaran ↗
+                </a>
+              </div>
+
+              <div class="contact-meta-item">
+                <span class="meta-label">PROFESSIONAL NETWORK:</span>
+                <a href="https://www.linkedin.com/in/aryan-dinakaran-462277230/" target="_blank" rel="noopener noreferrer" class="meta-content" style="color: #000000; text-decoration: underline;">
+                  linkedin.com/in/aryan-dinakaran-462277230/ ↗
+                </a>
+              </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; flex-direction: column; gap: 0.65rem;">
+              <span style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">ACCELERATION:</span>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5;">
+                Epochlypse Research is accelerated by NVIDIA Inception Program.
+              </p>
+              <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener noreferrer" title="Epochlypse Research is accelerated by NVIDIA Inception Program">
+                <img src="./assets/nvidia-inception-program-badge-rgb-for-screen.svg" alt="Epochlypse Research is accelerated by NVIDIA Inception Program" class="contact-nvidia-badge-img" />
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       UNIVERSAL MINIMALIST FOOTER
+       ======================================================================== -->
+  <footer>
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="brand-logo">EPOCHLYPSE RESEARCH</div>
+          <p class="footer-motto">
+            Pioneering sovereign autonomous intelligence with mathematical safety guardrails. Engineered in Mumbai (Bombay), India.
+          </p>
+        </div>
+
+        <div class="footer-nvidia-col">
+          <span style="font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.06em; text-transform: uppercase;">ACCELERATION:</span>
+          <p style="font-size: 0.82rem; color: var(--text-muted); max-width: 280px; line-height: 1.5;">
+            Epochlypse Research is accelerated by NVIDIA Inception Program.
+          </p>
+          <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener noreferrer" title="Epochlypse Research is accelerated by NVIDIA Inception Program">
+            <img src="./assets/nvidia-inception-program-badge-rgb-for-screen.svg" alt="Epochlypse Research is accelerated by NVIDIA Inception Program" class="footer-nvidia-badge-img" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credits">
+          <span>&copy; 2026 EPOCHLYPSE RESEARCH. ALL RIGHTS RESERVED.</span>
+          <span>&bull;</span>
+          <span>BUILT IN MUMBAI (BOMBAY), INDIA [19.050862, 72.835904].</span>
+          <span>&bull;</span>
+          <a href="./privacy.html" style="color: var(--text-primary); text-decoration: underline;">PRIVACY POLICY</a>
+        </div>
+
+        <div id="liveClock" class="footer-clock">
+          MUMBAI [IST] --:--:-- // UTC --:--:--
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./app.js"></script>
 </body>
 </html>
